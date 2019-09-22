@@ -483,6 +483,7 @@ export default class AWSS3Provider implements StorageProvider {
 			apiVersion: '2006-03-01',
 			params: { Bucket: bucket },
 			signatureVersion: 'v4',
+			useAccelerateEndpoint: true,
 			region,
 			credentials,
 			...localTestingConfig,
